@@ -1,0 +1,186 @@
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+    font-weight: 10px;
+    margin-top: 10px;
+}
+
+/* Specialties Section */
+.specialties {
+    padding: 50px 20px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.specialties h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #1f3a93;
+}
+
+.specialties-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.specialty {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.specialty:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.specialty i {
+    font-size: 40px;
+    color: #1f3a93;
+    margin-bottom: 20px;
+}
+
+.specialty h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.specialty p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Plans Section */
+.plans {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
+.plans h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #1f3a93;
+}
+
+.plans-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.plan h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #1f3a93;
+}
+
+.plan p {
+    font-size: 16px;
+    color: #555;
+}
+
+.btn-plan {
+    background-color: #1f3a93;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-plan:hover {
+    background-color: #163370;
+}
+
+/* Previous Works Section */
+.previous-works {
+    padding: 50px 20px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.previous-works h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #1f3a93;
+}
+
+.works-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.work {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.work h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1f3a93;
+}
+
+.work p {
+    font-size: 16px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .specialties-container, .plans-container, .works-container {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+}

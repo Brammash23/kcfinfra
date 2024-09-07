@@ -1,0 +1,146 @@
+
+section {
+
+    padding: 70px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #4a90e2;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+     padding-top: 40px;
+
+}
+
+/* About Section */
+.about-section {
+       background-color: whitesmoke;
+       font-size: 20px;
+       font-weight: 2px;
+    animation: slide-up 1s ease-in-out;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 2px;
+}
+
+/* Team Section */
+.team-section {
+    background-color: #ffffff;
+    animation: slide-up 1s ease-in-out;
+}
+
+.team-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    max-width: 300px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    margin: ;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    margin: 10px 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Mission Section */
+.mission-section {
+    background-color: whitesmoke;
+    animation: slide-up 1s ease-in-out;
+}
+
+.mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: fade-in 2s ease-in-out;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+}
